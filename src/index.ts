@@ -1,8 +1,9 @@
-import { UserForm } from "./views/UserForm";
+import { UserEdit } from "./views/UserEdit";
 import { User } from "./models/User";
 
-const user = User.buildUser({ name: "NAME", age: 20 })
+const user = User.buildUser({ name: "NAME", age: 20 });
 
-const useForm = new UserForm(document.getElementById("root")!, user);
+const userEdit = new UserEdit(document.getElementById("root")!, user);
 
-useForm.render()
+userEdit.render();
+console.log(userEdit);
